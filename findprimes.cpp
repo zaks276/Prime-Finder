@@ -49,6 +49,9 @@ void FindPrimes::startClicked()
         --threadDone;
 
     }
+    if(threadDone == 0){
+        ui->startButton->setEnabled(true);
+    }
 }
 
 void FindPrimes::printPrimes(int p, int t)
@@ -72,9 +75,6 @@ void FindPrimes::closeEvent(QCloseEvent *event){
         else
             event->ignore();
     }
-    else if(threadDone == 0)
-        ui->startButton->setEnabled(true);
-
 }
 
 
