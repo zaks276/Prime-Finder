@@ -26,7 +26,7 @@ public slots:
 
 private:
     Ui::FindPrimes *ui;
-    int threadDone;
+    int threadDone = 0;
 };
 
 #endif // FINDPRIMES_H
